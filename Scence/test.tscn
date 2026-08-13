@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dskslyu3laq68"]
+
+[ext_resource type="PackedScene" uid="uid://dnht4q6sge5oe" path="res://Scence/ruin_village.tscn" id="1_fky25"]
+[ext_resource type="PackedScene" uid="uid://xuyrgu5lpjmt" path="res://Actor/playerlv_1.tscn" id="2_knk55"]
+
+[node name="test" type="Node2D" unique_id=258268886]
+
+[node name="LevelRoot" parent="." unique_id=979737547 instance=ExtResource("1_fky25")]
+
+[node name="playerlv1" parent="." unique_id=1946378690 instance=ExtResource("2_knk55")]
+position = Vector2(9, 170)
