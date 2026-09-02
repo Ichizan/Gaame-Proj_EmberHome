@@ -93,16 +93,7 @@ Assets/
 ## THANK YOU FOR
 
 
-**Assets**
-- [2D Fantasy Elf Character Sprite](https://craftpix.net/freebies/2d-fantasy-elf-free-sprite-sheets/)
-- [Kenney.nl - Platformer Art Winter](https://kenney.nl/assets/platformer-art-winter)
-- [Dark Fantasy Enemies](https://monopixelart.itch.io/dark-fantasy-enemies-asset-pack)
-- [Flying Forest Monsters](https://monopixelart.itch.io/forest-monsters-pixel-art)
-- [Skeletons Pack](https://monopixelart.itch.io/skeletons-pack)
-- [Golems Pack](https://monopixelart.itch.io/golems-pack)
-- [Water and Fire Magic Sprite Vector Pack](https://craftpix.net/freebies/free-water-and-fire-magic-sprite-vector-pack/)
-- [Trap Platformer](https://bdragon1727.itch.io/free-trap-platformer)
-- [Level Ice/Dirt Asset](https://coloritmic.itch.io/level-icedirt-asset)
+
 
 **Sound Effects**
 - GDFXR (Sfxr plugin for Godot)
