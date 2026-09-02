@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://jksxtm47hlyp"]
+
+[ext_resource type="Script" uid="uid://de33bylevtba3" path="res://Scence/stuff/game_over.gd" id="1_brri1"]
+[ext_resource type="Texture2D" uid="uid://cwnaqid2iyyhv" path="res://Assets/imgg/BGGNEW.png" id="1_uybo7"]
+[ext_resource type="Texture2D" uid="uid://dtkmbecifqquo" path="res://Assets/imgg/gameovr.png" id="2_brri1"]
+[ext_resource type="Texture2D" uid="uid://dccyc5ctqqx2d" path="res://Assets/imgg/logo new.png" id="3_m7qo3"]
+
+[node name="GameOver" type="Node2D" unique_id=333181630]
+script = ExtResource("1_brri1")
+
+[node name="UI" type="Control" parent="." unique_id=1347515639]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1153.0
+offset_bottom = 524.0
+
+[node name="background" type="TextureRect" parent="UI" unique_id=1917673351]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -576.0
+offset_right = 576.0
+offset_bottom = 648.0
+grow_horizontal = 2
+texture = ExtResource("1_uybo7")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI" unique_id=741875138]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -220.5
+offset_top = -27.0
+offset_right = 2.8125
+offset_bottom = 39.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2, 2)
+
+[node name="btnLoadLast" type="Button" parent="UI/VBoxContainer" unique_id=702096221]
+layout_mode = 2
+text = "Load Last Saved"
+
+[node name="btnEXT" type="Button" parent="UI/VBoxContainer" unique_id=1788129670]
+layout_mode = 2
+text = "Exit"
+
+[node name="Gameover" type="Sprite2D" parent="UI" unique_id=63265827]
+position = Vector2(569, 129)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_brri1")
+
+[node name="Lgo" type="Sprite2D" parent="UI" unique_id=198441814]
+position = Vector2(968, 581)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("3_m7qo3")
+
+[connection signal="pressed" from="UI/VBoxContainer/btnLoadLast" to="." method="_on_btn_load_last_pressed"]
+[connection signal="pressed" from="UI/VBoxContainer/btnEXT" to="." method="_on_btn_ext_pressed"]

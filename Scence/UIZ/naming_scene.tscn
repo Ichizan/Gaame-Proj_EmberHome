@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://jmf6tu1yosq"]
+
+[ext_resource type="Texture2D" uid="uid://cwnaqid2iyyhv" path="res://Assets/imgg/BGGNEW.png" id="1_msrk8"]
+[ext_resource type="Script" uid="uid://w28yb7abyl8o" path="res://Scence/UIZ/naming_scene.gd" id="1_ncpa3"]
+[ext_resource type="FontFile" uid="uid://cycq20d681t2w" path="res://Assets/element/Ui/Font/PeaberryBase.ttf" id="2_ncpa3"]
+
+[node name="NamingScene" type="Control" unique_id=607823495]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1150.0
+offset_bottom = 645.0
+script = ExtResource("1_ncpa3")
+
+[node name="background" type="TextureRect" parent="." unique_id=288554023]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_msrk8")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=130930038]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 647.0
+color = Color(0.07585078, 0.07792727, 0.08030497, 0.5411765)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=273015821]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -223.5
+offset_top = -141.5
+offset_right = 208.5
+offset_bottom = 127.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=977785745]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ncpa3")
+theme_override_font_sizes/font_size = 48
+text = "What shall we call you, savior?"
+
+[node name="LineEdit" type="LineEdit" parent="." unique_id=1557546527]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -239.0
+offset_top = -76.5
+offset_right = 244.0
+offset_bottom = -13.5
+grow_horizontal = 2
+grow_vertical = 2
+placeholder_text = "Enter your name"
+alignment = 1
+max_length = 10
+
+[node name="btncon" type="Button" parent="." unique_id=1432949578]
+layout_mode = 0
+offset_left = 479.0
+offset_top = 325.0
+offset_right = 659.0
+offset_bottom = 384.0
+disabled = true
+text = "Start Game"
+
+[connection signal="pressed" from="btncon" to="." method="_on_btncon_pressed"]

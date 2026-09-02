@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://5cii60fvfm2s"]
+
+[ext_resource type="Script" uid="uid://d2l24r33s4cv6" path="res://Scence/stuff/temno_scene.gd" id="1_bf54c"]
+[ext_resource type="Texture2D" uid="uid://bxyayi3njnfpa" path="res://Assets/imgg/temnoscene.png" id="1_ynekk"]
+[ext_resource type="PackedScene" uid="uid://bgsxjbks7hnys" path="res://Scence/UIZ/dialogue_system.tscn" id="2_bf54c"]
+
+[node name="prologue1" type="Node2D" unique_id=1711456801]
+script = ExtResource("1_bf54c")
+
+[node name="background" type="TextureRect" parent="." unique_id=812229709]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_ynekk")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="DialogueSystem" parent="." unique_id=1650107888 instance=ExtResource("2_bf54c")]

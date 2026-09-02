@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://cp6e83q6qfgba"]
+
+[ext_resource type="Script" uid="uid://bftdrhgkycvuc" path="res://Scence/UIZ/hud.gd" id="1_c5cbl"]
+[ext_resource type="Texture2D" uid="uid://7qt4e2en8hxl" path="res://Assets/element/hearts/Heart4_4.png" id="2_1ei8l"]
+[ext_resource type="Texture2D" uid="uid://c7mr8o2swso6q" path="res://Assets/element/Ui/Dialog/DialogueBoxSimple.png" id="3_afh2l"]
+[ext_resource type="FontFile" uid="uid://cycq20d681t2w" path="res://Assets/element/Ui/Font/PeaberryBase.ttf" id="4_0mqxt"]
+
+[node name="HUD" type="CanvasLayer" unique_id=823462743]
+layer = 8
+script = ExtResource("1_c5cbl")
+
+[node name="Hearts" type="HBoxContainer" parent="." unique_id=1680687936]
+offset_right = 96.0
+offset_bottom = 16.0
+scale = Vector2(3, 3)
+mouse_filter = 2
+
+[node name="Heart1" type="TextureRect" parent="Hearts" unique_id=45239554]
+layout_mode = 2
+texture = ExtResource("2_1ei8l")
+stretch_mode = 2
+
+[node name="Heart2" type="TextureRect" parent="Hearts" unique_id=1649831053]
+layout_mode = 2
+texture = ExtResource("2_1ei8l")
+stretch_mode = 2
+
+[node name="Heart3" type="TextureRect" parent="Hearts" unique_id=1985854288]
+layout_mode = 2
+texture = ExtResource("2_1ei8l")
+stretch_mode = 2
+
+[node name="Heart4" type="TextureRect" parent="Hearts" unique_id=9637818]
+layout_mode = 2
+texture = ExtResource("2_1ei8l")
+stretch_mode = 2
+
+[node name="Heart5" type="TextureRect" parent="Hearts" unique_id=1100323594]
+layout_mode = 2
+texture = ExtResource("2_1ei8l")
+stretch_mode = 2
+
+[node name="FadeOverlay" type="ColorRect" parent="." unique_id=72973490]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="QuestBox" type="NinePatchRect" parent="." unique_id=1756476280]
+offset_left = 5.0
+offset_top = 53.0
+offset_right = 292.0
+offset_bottom = 105.0
+texture = ExtResource("3_afh2l")
+
+[node name="QuestLabel" type="Label" parent="QuestBox" unique_id=1000876473]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 8.0
+offset_right = 267.0
+offset_bottom = 53.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_0mqxt")
+theme_override_font_sizes/font_size = 16

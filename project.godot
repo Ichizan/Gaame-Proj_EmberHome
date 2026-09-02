@@ -15,10 +15,20 @@ run/main_scene="uid://b6tvaxw54wsq0"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+AudioManager="*uid://c2fk03uh3yq2u"
+PlayerStats="*uid://d3bj1um80bf5y"
+GameManager="*uid://btl56w557tprf"
+OptionsMenu="*uid://c4hdimsfgytxa"
+
 [display]
 
 window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
+
+[global_group]
+
+boss_doors=""
 
 [input]
 

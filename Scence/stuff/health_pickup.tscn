@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://don326huhvyy3"]
+
+[ext_resource type="Script" uid="uid://b23forjo6qd1a" path="res://Scence/stuff/health_pickup.gd" id="1_sopoc"]
+[ext_resource type="Texture2D" uid="uid://c7in44qhxyh4f" path="res://Assets/element/Ui/Receptacle/IconHeart.png" id="2_w6iqo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wp5od"]
+size = Vector2(14, 12)
+
+[node name="HealthPickup" type="Area2D" unique_id=891043726]
+script = ExtResource("1_sopoc")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1916573401]
+texture = ExtResource("2_w6iqo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2071822584]
+shape = SubResource("RectangleShape2D_wp5od")

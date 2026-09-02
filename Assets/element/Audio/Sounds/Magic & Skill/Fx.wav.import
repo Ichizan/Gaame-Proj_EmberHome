@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dmkyoucrgoxae"
+path="res://.godot/imported/Fx.wav-0f6370001d708baccdab92a1f19856ee.sample"
+
+[deps]
+
+source_file="res://Assets/element/Audio/Sounds/Magic & Skill/Fx.wav"
+dest_files=["res://.godot/imported/Fx.wav-0f6370001d708baccdab92a1f19856ee.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

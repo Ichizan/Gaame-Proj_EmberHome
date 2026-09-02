@@ -1,9 +1,8 @@
 [gd_scene format=3 uid="uid://b6tvaxw54wsq0"]
 
-[ext_resource type="Texture2D" uid="uid://eg4repa6cqek" path="res://Assets/imgg/bgtest.jpeg" id="1_1q5a4"]
 [ext_resource type="Script" uid="uid://bgikgmn0hq0qj" path="res://Scence/menu.gd" id="1_j4ljy"]
-[ext_resource type="Texture2D" uid="uid://dci5wvv8wwovf" path="res://Assets/imgg/cpkku_dark.png" id="2_j4ljy"]
-[ext_resource type="Texture2D" uid="uid://ciehmvu1phxg1" path="res://Assets/imgg/Logo_test-removebg-preview.png" id="3_xach1"]
+[ext_resource type="Texture2D" uid="uid://cwnaqid2iyyhv" path="res://Assets/imgg/BGGNEW.png" id="2_1q5a4"]
+[ext_resource type="Texture2D" uid="uid://dccyc5ctqqx2d" path="res://Assets/imgg/logo new.png" id="3_1q5a4"]
 
 [node name="Node2D" type="Node2D" unique_id=827773846]
 script = ExtResource("1_j4ljy")
@@ -18,52 +17,44 @@ offset_bottom = 524.0
 layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 648.0
-texture = ExtResource("1_1q5a4")
+texture = ExtResource("2_1q5a4")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
-
-[node name="CP" type="TextureRect" parent="UI" unique_id=860443088]
-layout_mode = 0
-offset_left = 24.0
-offset_top = 21.0
-offset_right = 280.0
-offset_bottom = 95.0
-texture = ExtResource("2_j4ljy")
 
 [node name="btnStart" type="Button" parent="UI" unique_id=843125025]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -76.5
-offset_top = 155.0
-offset_right = 78.5
-offset_bottom = 219.0
+offset_left = 193.5
+offset_top = 166.0
+offset_right = 516.5
+offset_bottom = 230.0
 grow_horizontal = 2
-text = "Start"
+text = "New Game"
 
-[node name="btnContinue" type="Button" parent="UI" unique_id=922351197]
+[node name="btnLoad" type="Button" parent="UI" unique_id=922351197]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -76.5
-offset_top = 224.0
-offset_right = 78.5
-offset_bottom = 288.0
+offset_left = 193.5
+offset_top = 251.0
+offset_right = 515.5
+offset_bottom = 315.0
 grow_horizontal = 2
 disabled = true
-text = "Continue"
+text = "Load Game"
 
 [node name="btnOption" type="Button" parent="UI" unique_id=606273451]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -77.0
-offset_top = 294.0
-offset_right = 78.0
-offset_bottom = 358.0
+offset_left = 195.5
+offset_top = 331.0
+offset_right = 515.5
+offset_bottom = 395.0
 grow_horizontal = 2
 text = "Option"
 
@@ -72,39 +63,23 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -76.5
-offset_top = 371.0
-offset_right = 78.5
-offset_bottom = 435.0
+offset_left = 196.5
+offset_top = 403.0
+offset_right = 514.5
+offset_bottom = 467.0
 grow_horizontal = 2
 text = "Credit"
 
-[node name="btnExit" type="Button" parent="UI" unique_id=1260450851]
-layout_mode = 0
-offset_left = 500.0
-offset_top = 444.0
-offset_right = 655.0
-offset_bottom = 508.0
-text = "Exit"
-
-[node name="CP2" type="TextureRect" parent="UI" unique_id=211692915]
-layout_mode = 0
-offset_left = 24.0
-offset_top = 21.0
-offset_right = 280.0
-offset_bottom = 95.0
-
 [node name="LogoRemovebgPreview" type="Sprite2D" parent="." unique_id=1862821512]
-position = Vector2(579.00006, 87.00001)
-scale = Vector2(0.53104573, 0.54656863)
+position = Vector2(731, 119.00001)
+scale = Vector2(0.45, 0.464)
 
 [node name="LogoTestRemovebgPreview" type="Sprite2D" parent="." unique_id=1845855652]
-position = Vector2(570, 78)
+position = Vector2(938, 68)
 scale = Vector2(0.4, 0.4)
-texture = ExtResource("3_xach1")
+texture = ExtResource("3_1q5a4")
 
 [connection signal="pressed" from="UI/btnStart" to="." method="_on_btn_start_pressed"]
-[connection signal="pressed" from="UI/btnContinue" to="." method="_on_btn_continue_pressed"]
+[connection signal="pressed" from="UI/btnLoad" to="." method="_on_btn_load_pressed"]
 [connection signal="pressed" from="UI/btnOption" to="." method="_on_btn_option_pressed"]
 [connection signal="pressed" from="UI/btnCredit" to="." method="_on_btn_credit_pressed"]
-[connection signal="pressed" from="UI/btnExit" to="." method="_on_btn_exit_pressed"]

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://2l5ittr5m4ly"]
+
+[ext_resource type="Texture2D" uid="uid://bwncg28dsoscp" path="res://Assets/imgg/cutscn1.png" id="1_3cbuc"]
+[ext_resource type="Script" uid="uid://jwr0telk2xe1" path="res://Scence/stuff/prologue_1.gd" id="1_6de2t"]
+[ext_resource type="PackedScene" uid="uid://bgsxjbks7hnys" path="res://Scence/UIZ/dialogue_system.tscn" id="2_2ob1g"]
+
+[node name="prologue1" type="Node2D" unique_id=1711456801]
+script = ExtResource("1_6de2t")
+
+[node name="background" type="TextureRect" parent="." unique_id=812229709]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_3cbuc")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="DialogueSystem" parent="." unique_id=1650107888 instance=ExtResource("2_2ob1g")]

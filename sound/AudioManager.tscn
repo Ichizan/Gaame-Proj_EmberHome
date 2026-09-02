@@ -1,0 +1,99 @@
+[gd_scene format=3 uid="uid://c2fk03uh3yq2u"]
+
+[ext_resource type="Script" uid="uid://bgwon8to0gxfm" path="res://sound/AudioManager.gd" id="1_drstp"]
+[ext_resource type="AudioStream" uid="uid://cfivlopyra4jh" path="res://sound/menu_soud.ogg" id="2_3s1p4"]
+[ext_resource type="AudioStream" uid="uid://cqhrjhel6hkyn" path="res://Assets/element/Audio/Sounds/Elemental/Grass.wav" id="2_571iv"]
+[ext_resource type="AudioStream" uid="uid://dy0ee3trei5sn" path="res://Assets/element/Audio/Sounds/Whoosh & Slash/Slash.wav" id="3_32plt"]
+[ext_resource type="AudioStream" uid="uid://cqwgy7roj25q2" path="res://Assets/element/Audio/Sounds/Whoosh & Slash/Whoosh.wav" id="4_0gkxb"]
+[ext_resource type="AudioStream" uid="uid://bvhywbvuah6pe" path="res://Assets/element/Audio/Jingles/GameOver.wav" id="5_b3rev"]
+[ext_resource type="AudioStream" uid="uid://c5sjj4vroj18v" path="res://Assets/element/Audio/Jingles/LevelUp1.wav" id="6_x8xn1"]
+[ext_resource type="AudioStream" uid="uid://bge1l5l54aqg6" path="res://sound/stone.ogg" id="7_m4yrh"]
+[ext_resource type="AudioStream" uid="uid://jft83n2k55fi" path="res://Assets/element/Audio/Sounds/Elemental/Fireball.wav" id="8_hky7h"]
+[ext_resource type="AudioStream" uid="uid://cqwmh7crlw3yk" path="res://sound/Orcs/hit1.wav" id="9_jicw7"]
+[ext_resource type="AudioStream" uid="uid://btrknluqh7dur" path="res://sound/Orcs/death5.wav" id="10_555k5"]
+[ext_resource type="AudioStream" uid="uid://djg7k4xqchhef" path="res://Assets/element/Audio/Jingles/Success1.wav" id="11_tev3h"]
+[ext_resource type="AudioStream" uid="uid://cwm5xtoqxd04k" path="res://sound/Bosshit.ogg" id="12_3ri0m"]
+[ext_resource type="AudioStream" uid="uid://dmrk832722fcg" path="res://Assets/element/Audio/Sounds/Menu/Menu5.wav" id="13_0nodk"]
+[ext_resource type="AudioStream" uid="uid://d14g73pcdkvpi" path="res://Assets/element/Audio/Musics/26 - Lost Village.ogg" id="15_cm44t"]
+[ext_resource type="AudioStream" uid="uid://16buyaanqjub" path="res://Assets/element/Audio/Musics/5 - Peaceful.ogg" id="16_54aw3"]
+[ext_resource type="AudioStream" uid="uid://dao2xcjhcq1p4" path="res://Assets/element/Audio/Musics/30 - Ruins.ogg" id="17_r15tc"]
+[ext_resource type="AudioStream" uid="uid://c5fatwy3almkf" path="res://sound/0810.ogg" id="18_r4s2s"]
+[ext_resource type="AudioStream" uid="uid://cp6ouv0ketpfj" path="res://sound/ED.ogg" id="19_ss885"]
+
+[node name="Audio_Manager" type="Node" unique_id=1945437618]
+script = ExtResource("1_drstp")
+
+[node name="mainwalk" type="AudioStreamPlayer" parent="." unique_id=913858298]
+stream = ExtResource("2_571iv")
+volume_db = -1.0
+bus = &"SFX"
+
+[node name="Slash" type="AudioStreamPlayer" parent="." unique_id=1913345477]
+stream = ExtResource("3_32plt")
+volume_db = -1.0
+bus = &"SFX"
+
+[node name="Hurt" type="AudioStreamPlayer" parent="." unique_id=1560326854]
+stream = ExtResource("4_0gkxb")
+bus = &"SFX"
+
+[node name="GameOver" type="AudioStreamPlayer" parent="." unique_id=427933880]
+stream = ExtResource("5_b3rev")
+bus = &"SFX"
+
+[node name="Lvlup" type="AudioStreamPlayer" parent="." unique_id=185038761]
+stream = ExtResource("6_x8xn1")
+bus = &"SFX"
+
+[node name="Stonewalk" type="AudioStreamPlayer" parent="." unique_id=1444487242]
+stream = ExtResource("7_m4yrh")
+bus = &"SFX"
+
+[node name="Fireball" type="AudioStreamPlayer" parent="." unique_id=535185983]
+stream = ExtResource("8_hky7h")
+bus = &"SFX"
+
+[node name="OrcHit" type="AudioStreamPlayer" parent="." unique_id=503144120]
+stream = ExtResource("9_jicw7")
+bus = &"SFX"
+
+[node name="OrcDie" type="AudioStreamPlayer" parent="." unique_id=1675403278]
+stream = ExtResource("10_555k5")
+bus = &"SFX"
+
+[node name="questsuccess" type="AudioStreamPlayer" parent="." unique_id=133294488]
+stream = ExtResource("11_tev3h")
+bus = &"SFX"
+
+[node name="BossHurt" type="AudioStreamPlayer" parent="." unique_id=756249466]
+stream = ExtResource("12_3ri0m")
+bus = &"SFX"
+
+[node name="BTN" type="AudioStreamPlayer" parent="." unique_id=35120205]
+stream = ExtResource("13_0nodk")
+bus = &"SFX"
+
+[node name="Main_at_menu" type="AudioStreamPlayer" parent="." unique_id=1326607739]
+stream = ExtResource("2_3s1p4")
+autoplay = true
+bus = &"BGM"
+
+[node name="ruin_village" type="AudioStreamPlayer" parent="." unique_id=1256354356]
+stream = ExtResource("15_cm44t")
+bus = &"BGM"
+
+[node name="heal_village" type="AudioStreamPlayer" parent="." unique_id=635051948]
+stream = ExtResource("16_54aw3")
+bus = &"BGM"
+
+[node name="Mist_for" type="AudioStreamPlayer" parent="." unique_id=2002921848]
+stream = ExtResource("17_r15tc")
+bus = &"BGM"
+
+[node name="Temnofight" type="AudioStreamPlayer" parent="." unique_id=548142941]
+stream = ExtResource("18_r4s2s")
+bus = &"BGM"
+
+[node name="END" type="AudioStreamPlayer" parent="." unique_id=1666838810]
+stream = ExtResource("19_ss885")
+bus = &"BGM"

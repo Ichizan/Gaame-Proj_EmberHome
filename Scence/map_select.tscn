@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://cduauogrrkoft"]
+
+[ext_resource type="Script" uid="uid://bddb28xbxobq" path="res://Scence/map_select.gd" id="1_h0gcs"]
+[ext_resource type="Texture2D" uid="uid://b036e52ph4pe3" path="res://Assets/imgg/Map.png" id="2_h0gcs"]
+[ext_resource type="PackedScene" uid="uid://bgsxjbks7hnys" path="res://Scence/UIZ/dialogue_system.tscn" id="3_c6xho"]
+
+[node name="MapSelect" type="CanvasLayer" unique_id=2033859026]
+process_mode = 3
+layer = 8
+script = ExtResource("1_h0gcs")
+
+[node name="Control" type="Control" parent="." unique_id=1489334301]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="background" type="TextureRect" parent="Control" unique_id=716846835]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("2_h0gcs")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="btnruin" type="Button" parent="Control" unique_id=2013907344]
+layout_mode = 0
+offset_left = 114.0
+offset_top = 372.0
+offset_right = 220.0
+offset_bottom = 424.0
+text = "VILLAGE"
+
+[node name="btnheal" type="Button" parent="Control" unique_id=1803709239]
+visible = false
+layout_mode = 0
+offset_left = 114.0
+offset_top = 372.0
+offset_right = 220.0
+offset_bottom = 424.0
+text = "VILLAGE"
+
+[node name="btnMist" type="Button" parent="Control" unique_id=608405824]
+layout_mode = 0
+offset_left = 778.0
+offset_top = 502.0
+offset_right = 886.0
+offset_bottom = 554.0
+text = "MIST FOREST"
+
+[node name="btntem" type="Button" parent="Control" unique_id=21661636]
+layout_mode = 0
+offset_left = 894.0
+offset_top = 54.0
+offset_right = 1024.0
+offset_bottom = 106.0
+text = "TEMNOTA CAVE"
+
+[node name="btnback" type="Button" parent="Control" unique_id=1167585926]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 593.0
+offset_right = 145.0
+offset_bottom = 637.0
+text = "BACK"
+
+[node name="DialogueSystem" parent="." unique_id=1650107888 instance=ExtResource("3_c6xho")]
+visible = false
+
+[connection signal="pressed" from="Control/btnruin" to="." method="_on_btnruin_pressed"]
+[connection signal="pressed" from="Control/btnheal" to="." method="_on_btnheal_pressed"]
+[connection signal="pressed" from="Control/btnMist" to="." method="_on_btn_mist_pressed"]
+[connection signal="pressed" from="Control/btntem" to="." method="_on_btntem_pressed"]
+[connection signal="pressed" from="Control/btnback" to="." method="_on_btnback_pressed"]

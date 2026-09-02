@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dmv8ubjsue3we"]
+
+[ext_resource type="Texture2D" uid="uid://cmaxgp1jwt0eq" path="res://Assets/element/hearts/block.png" id="1_mpm53"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wp5od"]
+size = Vector2(6, 18)
+
+[node name="BossDoor" type="StaticBody2D" unique_id=1476352707 groups=["boss_doors"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=778123813]
+texture = ExtResource("1_mpm53")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2134640417]
+shape = SubResource("RectangleShape2D_wp5od")

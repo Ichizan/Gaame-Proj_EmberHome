@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://b5ypo2ca78gri"]
+
+[ext_resource type="Texture2D" uid="uid://bi7dq4yxoeh3y" path="res://Assets/actor/orcK/orc3_idle_with_shadow.png" id="1_2s03q"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m1c0k"]
+atlas = ExtResource("1_2s03q")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cwyow"]
+atlas = ExtResource("1_2s03q")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0oivm"]
+atlas = ExtResource("1_2s03q")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hgjt8"]
+atlas = ExtResource("1_2s03q")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k56px"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m1c0k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cwyow")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0oivm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hgjt8")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 6.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k56px"]
+size = Vector2(19, 27)
+
+[node name="OrcK" type="CharacterBody2D" unique_id=412495864]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=659318604]
+sprite_frames = SubResource("SpriteFrames_k56px")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.826529
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=365558849]
+position = Vector2(-0.5, -4.5)
+shape = SubResource("RectangleShape2D_k56px")

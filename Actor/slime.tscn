@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://hiqxnqx1c5do"]
+
+[ext_resource type="Texture2D" uid="uid://dwdkjcrq65coa" path="res://Assets/actor/Slime/Slime1_Idle_with_shadow.png" id="1_aha5c"]
+[ext_resource type="Script" uid="uid://b1i0udteykyq1" path="res://Actor/slime.gd" id="1_n67bn"]
+[ext_resource type="FontFile" uid="uid://c6vqmmxudg8dy" path="res://Assets/element/Ui/Font/NormalFont.ttf" id="3_ujufe"]
+[ext_resource type="Texture2D" uid="uid://bauf2v6svlrve" path="res://Assets/element/Ui/save.png" id="4_yo1cv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ysj4c"]
+atlas = ExtResource("1_aha5c")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jgb08"]
+atlas = ExtResource("1_aha5c")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n67bn"]
+atlas = ExtResource("1_aha5c")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ujufe"]
+atlas = ExtResource("1_aha5c")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yo1cv"]
+atlas = ExtResource("1_aha5c")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7bmoo"]
+atlas = ExtResource("1_aha5c")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wp5od"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ysj4c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jgb08")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n67bn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ujufe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yo1cv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7bmoo")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 8.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wp5od"]
+radius = 7.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aha5c"]
+size = Vector2(31, 28)
+
+[node name="Slime" type="CharacterBody2D" unique_id=1647716914]
+script = ExtResource("1_n67bn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=323687770]
+sprite_frames = SubResource("SpriteFrames_wp5od")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.4846221
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=214207871]
+shape = SubResource("CircleShape2D_wp5od")
+
+[node name="InteractArea" type="Area2D" parent="." unique_id=875809916]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractArea" unique_id=732489361]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_aha5c")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=599873287]
+position = Vector2(-0.7, 0)
+
+[node name="NewInteract" type="Label" parent="Node2D" unique_id=1512330485]
+offset_left = -1.3
+offset_top = -28.0
+offset_right = 3.7
+offset_bottom = -6.0
+theme_override_fonts/font = ExtResource("3_ujufe")
+text = "!"
+
+[node name="SaveIcon" type="Sprite2D" parent="Node2D" unique_id=930402725]
+visible = false
+position = Vector2(0.70000005, -15)
+scale = Vector2(0.14999999, 0.16)
+texture = ExtResource("4_yo1cv")
+
+[connection signal="body_entered" from="InteractArea" to="." method="_on_interact_area_body_entered"]
+[connection signal="body_exited" from="InteractArea" to="." method="_on_interact_area_body_exited"]

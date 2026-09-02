@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://bgsxjbks7hnys"]
+
+[ext_resource type="Script" uid="uid://na8udiakpfdc" path="res://Scence/UIZ/Dialouge/dialogue_system.gd" id="1_gwlrc"]
+[ext_resource type="Texture2D" uid="uid://d2amytll8x7nf" path="res://Assets/element/Ui/Dialog/DialogBox.png" id="2_a4eag"]
+[ext_resource type="FontFile" uid="uid://cycq20d681t2w" path="res://Assets/element/Ui/Font/PeaberryBase.ttf" id="4_k1ont"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dagrs"]
+texture = ExtResource("2_a4eag")
+
+[node name="DialogueSystem" type="CanvasLayer" unique_id=1650107888]
+layer = 10
+script = ExtResource("1_gwlrc")
+
+[node name="Panel" type="Panel" parent="." unique_id=404809951]
+offset_left = 17.0
+offset_top = 469.0
+offset_right = 1137.0
+offset_bottom = 636.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_dagrs")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=559011546]
+offset_left = 39.0
+offset_top = 475.0
+offset_right = 1111.0
+offset_bottom = 656.0
+size_flags_horizontal = 3
+
+[node name="Control" type="Control" parent="HBoxContainer" unique_id=195745141]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="HBoxContainer/Control" unique_id=2076205832]
+position = Vector2(28, 28)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=1476195702]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="NameLabel" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=1051536916]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_k1ont")
+theme_override_font_sizes/font_size = 24
+
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/VBoxContainer" unique_id=571830337]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("4_k1ont")
+theme_override_font_sizes/normal_font_size = 28
+bbcode_enabled = true
+scroll_active = false
+visible_characters_behavior = 1
+
+[node name="button_container" type="HBoxContainer" parent="HBoxContainer/VBoxContainer" unique_id=1010142026]
+layout_mode = 2

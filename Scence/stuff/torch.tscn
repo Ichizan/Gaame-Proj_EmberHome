@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://bybj6pv7q2dwe"]
+
+[ext_resource type="Texture2D" uid="uid://cr8lssrv5rg8t" path="res://Assets/element/hearts/fire_animation.png" id="1_umt3o"]
+[ext_resource type="Texture2D" uid="uid://d4dqoifod1jsc" path="res://Assets/element/hearts/BLLM(1).png" id="2_umt3o"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0dv62"]
+atlas = ExtResource("1_umt3o")
+region = Rect2(35, 0, 35, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xrowt"]
+atlas = ExtResource("1_umt3o")
+region = Rect2(35, 48, 35, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jh0ml"]
+atlas = ExtResource("1_umt3o")
+region = Rect2(35, 96, 35, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5a1wb"]
+atlas = ExtResource("1_umt3o")
+region = Rect2(35, 144, 35, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8q6qe"]
+atlas = ExtResource("1_umt3o")
+region = Rect2(35, 192, 35, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bix5j"]
+atlas = ExtResource("1_umt3o")
+region = Rect2(35, 240, 35, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wp5od"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0dv62")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xrowt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jh0ml")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5a1wb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8q6qe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bix5j")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Torch" type="Node2D" unique_id=475931989]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=485031898]
+sprite_frames = SubResource("SpriteFrames_wp5od")
+autoplay = "default"
+frame_progress = 0.39574084
+
+[node name="PointLight2D" type="PointLight2D" parent="AnimatedSprite2D" unique_id=40111160]
+color = Color(1, 1, 0.5058824, 1)
+energy = 2.0
+texture = ExtResource("2_umt3o")
+texture_scale = 2.0

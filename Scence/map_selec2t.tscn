@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://d1scuogd4urm5"]
+
+[ext_resource type="Script" uid="uid://c22va1qp6n2n3" path="res://Scence/map_selec_2t.gd" id="1_vcvl3"]
+[ext_resource type="Texture2D" uid="uid://eg4repa6cqek" path="res://Assets/imgg/bgtest.jpeg" id="2_ysuws"]
+
+[node name="MapSelect" type="Node2D" unique_id=347626917]
+script = ExtResource("1_vcvl3")
+
+[node name="Control" type="Control" parent="." unique_id=1489334301]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="background" type="TextureRect" parent="Control" unique_id=716846835]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("2_ysuws")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="btnVillage" type="Button" parent="Control" unique_id=1912117134]
+layout_mode = 0
+offset_left = 371.0
+offset_top = 370.0
+offset_right = 477.0
+offset_bottom = 422.0
+text = "VILLAGE"
+
+[node name="btnMist" type="Button" parent="Control" unique_id=608405824]
+layout_mode = 0
+offset_left = 531.0
+offset_top = 370.0
+offset_right = 639.0
+offset_bottom = 422.0
+text = "MIST FOREST"
+
+[node name="btnfin" type="Button" parent="Control" unique_id=21661636]
+layout_mode = 0
+offset_left = 687.0
+offset_top = 370.0
+offset_right = 817.0
+offset_bottom = 422.0
+text = "TEMNOTA CAVE"
+
+[connection signal="pressed" from="Control/btnVillage" to="." method="_on_btn_village_pressed"]
+[connection signal="pressed" from="Control/btnMist" to="." method="_on_btn_mist_pressed"]
+[connection signal="pressed" from="Control/btnfin" to="." method="_on_btnfin_pressed"]

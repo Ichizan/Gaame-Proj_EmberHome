@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://c6g447lcg7t7f"]
+
+[ext_resource type="Script" uid="uid://c6oc5whfkane4" path="res://Scence/stuff/end_hud.gd" id="1_lme0d"]
+[ext_resource type="FontFile" uid="uid://cycq20d681t2w" path="res://Assets/element/Ui/Font/PeaberryBase.ttf" id="2_ihttd"]
+
+[node name="EndHUD" type="CanvasLayer" unique_id=260594124]
+script = ExtResource("1_lme0d")
+
+[node name="ThankYouLabel" type="Label" parent="." unique_id=789835659]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -233.0
+offset_top = -126.0
+offset_right = 239.0
+offset_bottom = -58.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_ihttd")
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="btnExit" type="Button" parent="." unique_id=1796086248]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -98.0
+offset_top = -34.0
+offset_right = 100.0
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "EXIT"
+
+[connection signal="pressed" from="btnExit" to="." method="_on_btn_exit_pressed"]

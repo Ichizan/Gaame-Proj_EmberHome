@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://disuwgputis8g"]
+
+[ext_resource type="Texture2D" uid="uid://cw8q82vbeq7ig" path="res://Assets/imgg/cutsc2.png" id="1_2o7vs"]
+[ext_resource type="Script" uid="uid://bex2ilpcwqwo7" path="res://Scence/stuff/mistprologue.gd" id="1_t0vin"]
+[ext_resource type="PackedScene" uid="uid://bgsxjbks7hnys" path="res://Scence/UIZ/dialogue_system.tscn" id="2_bjhrg"]
+
+[node name="Mistprologue" type="Node2D" unique_id=1711456801]
+script = ExtResource("1_t0vin")
+
+[node name="background" type="TextureRect" parent="." unique_id=812229709]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_2o7vs")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="DialogueSystem" parent="." unique_id=1650107888 instance=ExtResource("2_bjhrg")]
