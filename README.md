@@ -1,5 +1,5 @@
 # Game Project 2D 
-# By 673380317-5 ธนกร เวียงสิมา
+# By 673380317-5 ธนกร เวียงสิมา , 673380310-9 นายจิตติพัฒน์ ทวีโคตร , 673380337-9 นายภูมิรพี นามบุบผา
 # EMBER HOME
 
 "A 2D RPG Action adventure where the player must explore the Mist Forest, defeat the darkness of Temnota, and restore a ruined village back to its former glory."
@@ -78,31 +78,39 @@ Assets/
 | Left click | Attack |
 | E | Interact |
 
-## Inspector Tips
-
-- **Player**: Toggle `double_jump` to enable double jump. Adjust `move_speed`, `jump_force`, `shoot_cooldown_time`, and `bullet_lifetime` directly in the inspector.
-- **Enemy Spawner**: Configure `enemy_scenes`, `speed_range`, `respawn_time`, and `max_instance` to control enemy behavior and density.
-- **Bullet**: Adjust `speed` and `lifetime` to change projectile feel.
-
 ## Saving
 
-- Press the **Save** button in the top-right corner to save your progress.
+- Interact with Slime to save
 - The game saves the player's position, score, lives, and audio settings.
 
 ## Credits
 ## THANK YOU FOR
 
+- [Main Character](https://craftpix.net/freebies/free-swordsman-1-3-level-pixel-top-down-sprite-character-pack/)
+- [Ruined House](https://mutterpixel-studio.itch.io/ruined-village-buildings-pixel-art-assets)
+- [Village Asset](https://pixeljad.itch.io/villagetopdown)
+- [Villages House](https://trislin.itch.io/pixel-lands-village)
+- [Bridge](https://craftpix.net/freebies/free-bridges-top-down-pixel-art-asset-pack/)
+- [Undead Tileset](https://craftpix.net/freebies/free-undead-tileset-top-down-pixel-art/?srsltid=AfmBOoo0L3KBInr3cAMJGajNkKVbvI20XnATxBXmF0Q-eWIHLw96TnQd)
+- [Dungueon](https://craftpix.net/freebies/free-2d-top-down-pixel-dungeon-asset-pack/?srsltid=AfmBOopdY9tYk4A_Qfst1hHtUnfZD_fM2zDqmf8AtIM95JnEk_o8Yv6x0)
+- [Temnota](https://craftpix.net/freebies/free-vampire-4-direction-pixel-character-sprite-pack/)
+- [Orc](https://craftpix.net/freebies/free-top-down-orc-game-character-pixel-art/)
+- [Slime](https://craftpix.net/freebies/free-slime-mobs-pixel-art-top-down-sprite-pack/)
+- [Glassblower](https://craftpix.net/freebies/free-glassblowers-workshop-top-down-pixel-art-asset/)
+- [HUD, Dialog , SFX , BGM](https://pixel-boy.itch.io/ninja-adventure-asset-pack)
+- [Fronts](https://emhuo.itch.io/peaberry-pixel-font)
+- [Icon](https://kenney.nl/assets/game-icons)
+- [Fireball](https://craftpix.net/freebies/free-water-and-fire-magic-sprite-vector-pack/)
+- [Orc Voice Pack](https://johncarroll.itch.io/orc-voice-pack)
+- [Elena](https://liberatedpixelcup.github.io/Universal-LPC-Spritesheet-Character-Generator/)
 
-
-
-**Sound Effects**
-- GDFXR (Sfxr plugin for Godot)
-
-**Main Themes**
-- [EXCITE/Kamen Rider Ex-Aid 8bit](https://www.youtube.com/watch?v=OJcaYq3Hj6g&list=RDOJcaYq3Hj6g&start_radio=1).
 
 **Disclaimer**
 - This project was created for educational purposes. All third-party assets, including music, sound effects, and art, belong to their respective owners and are not used for commercial gain.
+
+
+**Generative AI Usage**
+- Generative AI was used in this project to create some cutscene artwork and audio assets.
 
 
 **Modified for Educational Use By**
