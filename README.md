@@ -14,9 +14,9 @@ Visual Style: 2D Pixel Art Mix
 <img src="docs/demo1.jpg" width="300">
 <img src="docs/demo2.jpg" width="300">
 
-<img src="docs/qrcode.png" style="width:300px;" />
 
-- [Game Preview](https://ichizan.github.io/GameLab4/)
+
+- [Game Preview](https://ichizan.github.io/Gaame-Proj_EmberHome/)
 
 
 ## Features
@@ -86,6 +86,8 @@ Assets/
 ## Credits
 ## THANK YOU FOR
 
+**Assets**
+
 - [Main Character](https://craftpix.net/freebies/free-swordsman-1-3-level-pixel-top-down-sprite-character-pack/)
 - [Ruined House](https://mutterpixel-studio.itch.io/ruined-village-buildings-pixel-art-assets)
 - [Village Asset](https://pixeljad.itch.io/villagetopdown)
@@ -113,5 +115,3 @@ Assets/
 - Generative AI was used in this project to create some cutscene artwork and audio assets.
 
 
-**Modified for Educational Use By**
-- College of Computing, Khon Kaen University
